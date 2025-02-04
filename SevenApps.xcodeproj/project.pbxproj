@@ -6,8 +6,26 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9A6EE17809DEB0EF2931EA98 /* Pods_SevenApps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93989D998BD2496A56246688 /* Pods_SevenApps.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0010B7D92D527F2C008E681A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00CD4AB62D526F74005A7F1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00CD4ABD2D526F74005A7F1D;
+			remoteInfo = SevenApps;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		0010B7D52D527F2C008E681A /* SevenAppsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SevenAppsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00CD4ABE2D526F74005A7F1D /* SevenApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SevenApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93989D998BD2496A56246688 /* Pods_SevenApps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SevenApps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5A545DE5113063193C7F524 /* Pods-SevenApps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SevenApps.debug.xcconfig"; path = "Target Support Files/Pods-SevenApps/Pods-SevenApps.debug.xcconfig"; sourceTree = "<group>"; };
+		FE6D2B59FF0BBFD542DAAC8E /* Pods-SevenApps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SevenApps.release.xcconfig"; path = "Target Support Files/Pods-SevenApps/Pods-SevenApps.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -32,10 +50,18 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0010B7D22D527F2C008E681A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		00CD4ABB2D526F74005A7F1D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A6EE17809DEB0EF2931EA98 /* Pods_SevenApps.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +73,8 @@
 			children = (
 				00CD4AC02D526F74005A7F1D /* SevenApps */,
 				00CD4ABF2D526F74005A7F1D /* Products */,
+				3C95F74CA36AF6C0AE97B613 /* Pods */,
+				1FF10A490AA62501E9E44178 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,20 +82,60 @@
 			isa = PBXGroup;
 			children = (
 				00CD4ABE2D526F74005A7F1D /* SevenApps.app */,
+				0010B7D52D527F2C008E681A /* SevenAppsTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1FF10A490AA62501E9E44178 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93989D998BD2496A56246688 /* Pods_SevenApps.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C95F74CA36AF6C0AE97B613 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5A545DE5113063193C7F524 /* Pods-SevenApps.debug.xcconfig */,
+				FE6D2B59FF0BBFD542DAAC8E /* Pods-SevenApps.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0010B7D42D527F2C008E681A /* SevenAppsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0010B7DB2D527F2C008E681A /* Build configuration list for PBXNativeTarget "SevenAppsTests" */;
+			buildPhases = (
+				0010B7D12D527F2C008E681A /* Sources */,
+				0010B7D22D527F2C008E681A /* Frameworks */,
+				0010B7D32D527F2C008E681A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0010B7DA2D527F2C008E681A /* PBXTargetDependency */,
+			);
+			name = SevenAppsTests;
+			packageProductDependencies = (
+			);
+			productName = SevenAppsTests;
+			productReference = 0010B7D52D527F2C008E681A /* SevenAppsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		00CD4ABD2D526F74005A7F1D /* SevenApps */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00CD4AD12D526F75005A7F1D /* Build configuration list for PBXNativeTarget "SevenApps" */;
 			buildPhases = (
+				930F57F128E9A979261BC83D /* [CP] Check Pods Manifest.lock */,
 				00CD4ABA2D526F74005A7F1D /* Sources */,
 				00CD4ABB2D526F74005A7F1D /* Frameworks */,
 				00CD4ABC2D526F74005A7F1D /* Resources */,
+				5982E222076DA2D298AF5149 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -77,8 +145,6 @@
 				00CD4AC02D526F74005A7F1D /* SevenApps */,
 			);
 			name = SevenApps;
-			packageProductDependencies = (
-			);
 			productName = SevenApps;
 			productReference = 00CD4ABE2D526F74005A7F1D /* SevenApps.app */;
 			productType = "com.apple.product-type.application";
@@ -93,6 +159,10 @@
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
+					0010B7D42D527F2C008E681A = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 00CD4ABD2D526F74005A7F1D;
+					};
 					00CD4ABD2D526F74005A7F1D = {
 						CreatedOnToolsVersion = 16.2;
 					};
@@ -113,11 +183,19 @@
 			projectRoot = "";
 			targets = (
 				00CD4ABD2D526F74005A7F1D /* SevenApps */,
+				0010B7D42D527F2C008E681A /* SevenAppsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0010B7D32D527F2C008E681A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		00CD4ABC2D526F74005A7F1D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -127,7 +205,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5982E222076DA2D298AF5149 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SevenApps/Pods-SevenApps-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SevenApps/Pods-SevenApps-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SevenApps/Pods-SevenApps-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		930F57F128E9A979261BC83D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SevenApps-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		0010B7D12D527F2C008E681A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		00CD4ABA2D526F74005A7F1D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,9 +264,56 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		0010B7DA2D527F2C008E681A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00CD4ABD2D526F74005A7F1D /* SevenApps */;
+			targetProxy = 0010B7D92D527F2C008E681A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		0010B7DC2D527F2C008E681A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DTSAAQTA2J;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.frt.SevenAppsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SevenApps.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SevenApps";
+			};
+			name = Debug;
+		};
+		0010B7DD2D527F2C008E681A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DTSAAQTA2J;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.frt.SevenAppsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SevenApps.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SevenApps";
+			};
+			name = Release;
+		};
 		00CD4AD22D526F75005A7F1D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5A545DE5113063193C7F524 /* Pods-SevenApps.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -150,9 +324,10 @@
 				INFOPLIST_FILE = SevenApps/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -168,6 +343,7 @@
 		};
 		00CD4AD32D526F75005A7F1D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE6D2B59FF0BBFD542DAAC8E /* Pods-SevenApps.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -178,9 +354,10 @@
 				INFOPLIST_FILE = SevenApps/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -231,7 +408,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -294,7 +471,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -316,6 +493,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0010B7DB2D527F2C008E681A /* Build configuration list for PBXNativeTarget "SevenAppsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0010B7DC2D527F2C008E681A /* Debug */,
+				0010B7DD2D527F2C008E681A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		00CD4AB92D526F74005A7F1D /* Build configuration list for PBXProject "SevenApps" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
